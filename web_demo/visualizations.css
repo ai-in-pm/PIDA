@@ -1,0 +1,187 @@
+/**
+ * Styles for the visualizations in the Secure AI Agent web demo.
+ */
+
+/* Visualizations container */
+.visualizations-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+/* Tabs */
+.visualization-tabs {
+    display: flex;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.visualization-tab {
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.visualization-tab:hover {
+    color: #495057;
+    background-color: #f1f3f5;
+}
+
+.visualization-tab.active {
+    color: #2c3e50;
+    border-bottom-color: #3498db;
+}
+
+/* Visualization content */
+.visualization-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Visualization cards */
+.visualization-card {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visualization-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.visualization-card h3 {
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    color: #495057;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.visualization-image {
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.visualization-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.visualization-description {
+    padding: 15px;
+    font-size: 0.9em;
+    color: #6c757d;
+    line-height: 1.5;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Modal for full-size visualization */
+.visualization-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.visualization-modal-content {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.modal-image {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.modal-image img {
+    max-width: 100%;
+    max-height: 70vh;
+    border: 1px solid #dee2e6;
+}
+
+.modal-description {
+    margin-top: 15px;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* No visualizations message */
+.no-visualizations {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .visualization-card {
+        flex: 1 1 100%;
+    }
+    
+    .visualization-tabs {
+        justify-content: flex-start;
+    }
+    
+    .visualization-tab {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    
+    .visualization-modal-content {
+        width: 95%;
+        max-height: 95%;
+        padding: 15px;
+    }
+}
