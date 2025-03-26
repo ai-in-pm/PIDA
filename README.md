@@ -2,6 +2,11 @@
 
 This project implements a secure AI agent with robust defenses against prompt injection attacks. The implementation follows a defense-by-design approach based on the algorithm described in the research literature.
 
+The development of this repository was inspired by the paper "Defeating Prompt Injections by Design". To read the entire paper, visit https://arxiv.org/pdf/2503.18813
+
+![screencapture-file-D-PIA-visualizations-dashboard-html-2025-03-26-11_03_16](https://github.com/user-attachments/assets/0e08579b-fe5d-4de3-86d2-9452dab0dc15)
+![screencapture-file-D-PIA-web-demo-index-html-2025-03-26-10_16_38](https://github.com/user-attachments/assets/01367196-17ba-414e-8507-c4d48d770329)
+
 
 ## Core Defense Strategy
 
