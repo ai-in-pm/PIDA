@@ -1,6 +1,6 @@
 # Secure AI Agent with Prompt Injection Defense
 
-This project implements a secure AI agent with robust defenses against prompt injection attacks. The implementation follows a defense-by-design approach based on the algorithm described in the research literature.
+PIDA is a Prompt Injection Detective Agent. This project implements a secure AI agent with robust defenses against prompt injection attacks. The implementation follows a defense-by-design approach based on the algorithm described in the research literature.
 
 The development of this repository was inspired by the paper "Defeating Prompt Injections by Design". To read the entire paper, visit https://arxiv.org/pdf/2503.18813
 
